@@ -20,10 +20,10 @@ int zB = GetInfo("Введите z для координаты B: ");
 
 double distance(int xA, int yA, int zA, int xB, int yB, int zB)
 {
-    double resx = Math.Pow((xB - xA), 2);
-    double resy = Math.Pow((yB - yA), 2);
-    double resz = Math.Pow((zB - zA), 2);
-    double result = Math.Sqrt(resx + resy + resz);
+    double resX = Math.Pow((xB - xA), 2);
+    double resY = Math.Pow((yB - yA), 2);
+    double resZ = Math.Pow((zB - zA), 2);
+    double result = Math.Sqrt(resX + resY + resZ);
     return result;
 }
 
