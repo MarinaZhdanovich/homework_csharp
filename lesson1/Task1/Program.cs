@@ -15,4 +15,3 @@ else
 {
     Console.WriteLine($"max = {number2}");
 }
-Console.WriteLine();
