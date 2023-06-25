@@ -16,7 +16,7 @@ void FillArray(double[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().NextDouble() * 100;
+        array[i] = new Random().NextDouble() * 200 - 100; //0 * 200 - 100 = -100; 1 * 200 - 100 = 100, диапазон от [-100, 100)
     }
 }
 
