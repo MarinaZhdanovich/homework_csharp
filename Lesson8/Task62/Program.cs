@@ -7,7 +7,16 @@
 10 09 08 07
 */
 
-int[,] array = new int[4, 4];
+int InputNum(string message)
+{
+    Console.Write(message);
+    return int.Parse(Console.ReadLine()!);
+}
+
+int[,] Create2DArray(int rows, int columns)
+{
+    return new int[rows, columns];
+}
 
 void FillArray(int[,] array)
 {
@@ -42,5 +51,17 @@ void PrintArray(int[,] array)
     }
 }
 
-FillArray(array);
-PrintArray(array);
+int rows = InputNum("Введите количество строк: ");
+int columns = InputNum("Введите количество столбцов: ");
+int[,] myArray = Create2DArray(rows, columns);
+
+if (rows != columns)
+{
+    Console.WriteLine();
+    Console.WriteLine("Нельзя заполнить этот массив спирально. Количество строк не равны количеству столбцов");
+}
+else
+{
+    FillArray(myArray);
+    PrintArray(myArray);
+}
